@@ -41,16 +41,19 @@ def create_elements(df, element_type):
     return elements
 
 # Define the Galaxy structure
+  "category": "engage",
+  "description": "This galaxy contains all parts of the MITRE Engage framework, including Activities, Approaches, Goals, and Vulnerabilities.",
+  "name": "MITRE Engage Framework",
+  "source": "https://engage.mitre.org",
+  "type": "mitre-engage",
+
 galaxy = {
     "type": "mitre-engage",
     "uuid": str(uuid.uuid4()),  # Generate a unique UUID for the galaxy
     "name": "MITRE Engage Framework",
     "description": "This galaxy contains all parts of the MITRE Engage framework, including Activities, Approaches, Goals, and Vulnerabilities.",
-    "version": 1,
-    "namespace": "misp",
-    "distribution": 0,  # Adjust distribution according to your needs
-    "default": True,
-    "kill_chain_order": [],
+    "source": "https://engage.mitre.org",
+    "type": "mitre-engage",
     "values": []
 }
 
