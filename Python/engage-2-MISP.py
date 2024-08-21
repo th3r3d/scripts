@@ -4,7 +4,7 @@ import uuid
 from datetime import datetime
 
 # Load data from Excel
-file_path = '/path/to/egage/Engage-Data-V1.0.xlsx'  # Update this path to the correct location
+file_path = '/path/to/Engage-Data-V1.0.xlsx'  # Update this path to the correct location
 
 activities_df = pd.read_excel(file_path, sheet_name='Activities')
 approaches_df = pd.read_excel(file_path, sheet_name='Approaches')
@@ -41,20 +41,14 @@ def create_elements(df, element_type):
     return elements
 
 # Define the Galaxy structure
-  "category": "engage",
-  "description": "This galaxy contains all parts of the MITRE Engage framework, including Activities, Approaches, Goals, and Vulnerabilities.",
-  "name": "MITRE Engage Framework",
-  "source": "https://engage.mitre.org",
-  "type": "mitre-engage",
-
 galaxy = {
+    "category": "engage",
     "type": "mitre-engage",
     "uuid": str(uuid.uuid4()),  # Generate a unique UUID for the galaxy
     "name": "MITRE Engage Framework",
     "description": "This galaxy contains all parts of the MITRE Engage framework, including Activities, Approaches, Goals, and Vulnerabilities.",
-    "source": "https://engage.mitre.org",
-    "type": "mitre-engage",
-    "values": []
+    "source": "https://engage.mitre.org"
+    "version": 1
 }
 
 # Add elements to the galaxy with appropriate categories
