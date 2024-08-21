@@ -48,7 +48,6 @@ galaxy = {
     "name": "MITRE Engage Framework",
     "description": "This galaxy contains all parts of the MITRE Engage framework, including Activities, Approaches, Goals, and Vulnerabilities.",
     "source": "https://engage.mitre.org"
-    "version": 1
 }
 
 # Add elements to the galaxy with appropriate categories
